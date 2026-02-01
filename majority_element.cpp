@@ -54,8 +54,9 @@ public:
     }
 };
 
-if majority exist is not  gurentted
 
+
+// if majority exist is not  gurentted
 
 class Solution {
 public:
