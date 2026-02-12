@@ -6,6 +6,7 @@ public:
         int n = arr.size();
 
         // Separate positive and negative numbers
+        
         for(int i = 0; i < n; i++){
             if(arr[i] >= 0)
                 pos.push_back(arr[i]);
@@ -13,7 +14,10 @@ public:
                 neg.push_back(arr[i]);
         }
 
+        
+
         // If positives are more
+        
         if(pos.size() > neg.size()){
             
             for(int i = 0; i < neg.size(); i++){
