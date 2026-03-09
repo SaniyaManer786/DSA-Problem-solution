@@ -13,6 +13,8 @@ Improve algorithmic thinking
 
 Prepare for technical interviews
 
+Get Friendly With The Leetcode
+
 
 🧠 Topics Covered
 
