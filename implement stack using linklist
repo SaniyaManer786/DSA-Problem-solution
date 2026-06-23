@@ -1,0 +1,58 @@
+/* Structure of linked list Node
+class Node {
+  public:
+    int data;
+    Node* next;
+
+    Node(int x) {
+        data = x;
+        next = nullptr;
+    }
+};
+*/
+class myStack {
+
+  public:
+      Node* top;
+      int sz;
+    myStack() {
+    top = nullptr;
+    sz = 0;
+    
+        // Initialize your data members
+    }
+
+    bool isEmpty() {
+        return top == nullptr;
+        // check if the stack is empty
+    }
+
+    void push(int x) {
+        Node* temp=new Node(x);
+        temp->next=top;
+        top=temp;
+        sz=sz+1;
+        // Adds an element x at the top of the stack
+    }
+
+    void pop() {
+        if (isEmpty()) return;
+        Node* temp=top;
+        top=top->next;
+        delete temp;
+        sz=sz-1;
+        // Removes the top element of the stack
+    }
+
+    int peek() {
+        if (isEmpty()) return -1;
+        return top->data;
+        // Returns the top element of the stack
+        // If stack is empty, return -1
+    }
+
+    int size() {
+        return sz;
+        // Returns the current size of the stack.
+    }
+};
